@@ -1,0 +1,25 @@
+name = "Lane-Grid"
+license = "MIT"
+licenselink = "https://github.com/seanlane/lane-grid/blob/master/LICENSE.md"
+description = "A theme for Hugo based on the Hugo-coder theme"
+homepage = "https://github.com/seanlane/lane-grid/"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "responsive",
+  "simple",
+  "clean",
+  "personal"
+]
+features = [
+  "analytics",
+  "favicon",
+  "pagination",
+  "syntax-highlighting"
+]
+min_version = "0.49"
+
+[author]
+  name = "Sean Lane"
+  homepage = "https://sean.lane.sh"

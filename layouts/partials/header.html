@@ -1,0 +1,26 @@
+<nav class="navigation pure-g">
+  <section class="pure-u-1 pure-u-md-1-3 nav-left">
+    {{ if .Site.Params.avatarurl }}
+      <a class="nav-avatar" href="{{ .Site.BaseURL | absLangURL }}">
+        <img src="/{{ .Site.Params.avatarurl }}" alt="avatar" />
+      </a>
+    {{ end}}
+    <a class="nav-title" href="{{ .Site.BaseURL | absLangURL }}">
+      {{ .Site.Title }}
+    </a>
+  </section>
+  <section class="pure-u-1 pure-u-md-1-3 nav-center">
+    {{ with .Site.Params.social }}
+      {{ range .}}
+        <a href="{{ .url }}"><i class="{{ .icon }}"></i></a>
+      {{ end }}
+    {{ end }}
+  </section>
+  <section class="pure-u-1 pure-u-md-1-3 nav-right">
+    {{ with .Site.Menus.main}}
+      {{ range . }}
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      {{ end }}
+    {{ end }}
+  </section>
+</nav>

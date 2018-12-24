@@ -1,0 +1,61 @@
+<!-- <div class="center">
+  <h2>
+    Current Roles
+  </h2>
+</div> -->
+
+{{ with .Site.Params.roles.current }}
+  <div class="pure-g index-container">
+  {{ range .}}
+    <div class="pure-u-1 pure-u-sm-1-3 center">
+      <div class="index-wrapper">
+        <h4>{{ .title }} </h4>
+        <div>
+          <a href="{{ .url }}" aria-label="{{ .name }}">
+          {{ if .image_class }}
+            <img src="{{ .image }}" class="{{ .image_class }}"/>
+          {{ else }}
+             <img src="{{ .image }}" class="index-image"/>
+          {{ end }}
+          </a>
+        </div>
+        {{ if .post_url }}
+        <a href="{{ .post_url }}">Read More</a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+  </div>
+{{ end }}
+
+<div class="center">
+  <h2>
+    Past Roles & Milestones
+  </h2>
+</div>
+
+{{ with .Site.Params.roles.past }}
+  <div class="pure-g index-container">
+  {{ range .}}
+    <div class="pure-u-1 pure-u-sm-1-3 center">
+      <div class="index-wrapper">
+        <h4>{{ .title }} </h4>
+        <div>
+          <a href="{{ .url }}" aria-label="{{ .name }}">
+          {{ if .image_class }}
+            <img src="{{ .image }}" class="{{ .image_class }}"/>
+          {{ else }}
+             <img src="{{ .image }}" class="index-image"/>
+          {{ end }}
+          </a>
+        </div>
+        {{ if .post_url }}
+        <a href="{{ .post_url }}">Read More</a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+  </div>
+{{ end }}
+
+<!-- {{ .Content }} -->

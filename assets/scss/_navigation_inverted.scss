@@ -1,0 +1,17 @@
+body.inverted {
+
+
+  .navigation {
+    a, span {
+      color: $fg-color-inverted;
+    }
+    a {
+      &:hover,
+      &:focus {
+        color: $link-color-inverted;
+      }
+    }
+    
+  }
+
+}
