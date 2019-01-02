@@ -62,7 +62,7 @@
   .nav-right {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     @media screen and (max-width: 48em) {
       justify-content: center;
     }
