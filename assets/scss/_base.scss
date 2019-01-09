@@ -182,5 +182,15 @@ table tr th:last-child {
 .index-image-tall { width: 150px; }
 .index-container { margin-top: 50px; }
 .index-wrapper { 
-  margin: 25px 0;
-  padding: 0 10px; }
+  margin: 0;
+  padding:0; 
+  display: flex;
+  flex-flow: column;
+}
+.index-image-container {
+  min-height: 150px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0 5px;
+}
