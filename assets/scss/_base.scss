@@ -192,9 +192,13 @@ table tr th:last-child {
   display: flex; 
   align-items: center; 
   justify-content: center; 
-  padding: 0 5px;
+  padding: 0 5px 15px;
 }
 
 .post-summary {
   text-align: justify;
+}
+
+.resume-bullet-list {
+  margin-top: 5px;
 }
