@@ -1,8 +1,3 @@
-<!-- <div class="center">
-  <h2>
-    Current Roles
-  </h2>
-</div> -->
 
 {{ with .Site.Params.roles.current }}
   <div class="pure-g index-container">
@@ -29,9 +24,9 @@
 {{ end }}
 
 <div class="center">
-  <h2>
+  <h3>
     Past Roles & Milestones
-  </h2>
+  </h3>
 </div>
 
 {{ with .Site.Params.roles.past }}
@@ -57,5 +52,3 @@
   {{ end }}
   </div>
 {{ end }}
-
-<!-- {{ .Content }} -->
